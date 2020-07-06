@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Main /> sould render heading 1`] = `
+<main
+  class="styles__Wrapper-czREMl bljgDb"
+>
+  <img
+    alt="logo"
+    class="styles__Logo-hpIqnx hQjETQ"
+    src="/img/logo.svg"
+  />
+  <h1
+    class="styles__Title-fMTgIO fjrrRF"
+  >
+    Won Games
+  </h1>
+  <h2
+    class="styles__Description-htEhDc kiZXgT"
+  >
+    A e-commerce project for games build with Typescript, React, Next and Styled-Components
+  </h2>
+  <img
+    alt="main image"
+    class="styles__Illustration-fhoxhO hNVvPh"
+    src="/img/hero-illustration.svg"
+  />
+</main>
+`
