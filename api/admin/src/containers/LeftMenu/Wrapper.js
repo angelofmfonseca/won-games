@@ -21,18 +21,14 @@ const Wrapper = styled.div`
       }
 
       ::-webkit-scrollbar-thumb {
-        background-color: ${(props) =>
-          props.theme.main.colors.leftMenu["title-color"]};
+        background-color: ${theme.main.colors.leftMenu["title-color"]};
       }
 
       ::-webkit-scrollbar-thumb:hover {
-        background-color: ${(props) =>
-          props.theme.main.colors.leftMenu["link-color"]};
+        background-color: ${theme.main.colors.leftMenu["link-color"]};
       }
 
-      scrollbar-color: ${(props) =>
-          props.theme.main.colors.leftMenu["title-color"]}
-        transparent;
+      scrollbar-color: ${theme.main.colors.leftMenu["title-color"]} transparent;
     }
   `}
 `;
