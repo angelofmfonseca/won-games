@@ -19,7 +19,6 @@ describe('<MediaMatch />', () => {
       </>
     )
     desktopHeading = screen.getByTestId('desktop')
-    console.log('desktopHeading: ', desktopHeading)
     mobileHeading = screen.getByTestId('mobile')
   })
 
