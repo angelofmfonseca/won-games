@@ -23,4 +23,23 @@ describe('<Banner />', () => {
     expect(screen.getByRole('img', { name: /Defy death/i })).toBeInTheDocument()
     expect(container.firstChild).toMatchSnapshot()
   })
+
+  it('should render a Ribbon', () => {
+    renderWithTheme(
+      <Banner
+        {...props}
+        ribbon="My Ribbon"
+        ribbonSize="small"
+        ribbonColor="secondary"
+      />
+    )
+    expect(screen.getByText(/My Ribbon/i)).toBeInTheDocument()
+    expect(screen.getByText(/My Ribbon/i)).toHaveStyle({
+      backgroundColor: '#3CD3C1'
+    })
+    expect(screen.getByText(/My Ribbon/i)).toHaveStyle({
+      height: '2.5rem',
+      fontSize: '1.2rem'
+    })
+  })
 })
