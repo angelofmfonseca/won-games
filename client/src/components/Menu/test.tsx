@@ -4,14 +4,14 @@ import { renderWithTheme } from '../../utils/tests/helpers'
 import Menu from '.'
 
 describe('<Menu />', () => {
-  it('sould render Menu', () => {
+  it('should render Menu', () => {
     renderWithTheme(<Menu />)
     expect(screen.getByLabelText(/open menu/i)).toBeInTheDocument()
     expect(screen.getByLabelText(/search/i)).toBeInTheDocument()
     expect(screen.getByLabelText(/open shopping cart/i)).toBeInTheDocument()
   })
 
-  it('sould handle the open/close Menu', () => {
+  it('should handle the open/close Menu', () => {
     renderWithTheme(<Menu />)
     const fullMenuElement = screen.getByRole('navigation', { hidden: true })
 

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Button /> sould render medium size button by default 1`] = `
+exports[`<Button /> should render medium size button by default 1`] = `
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
