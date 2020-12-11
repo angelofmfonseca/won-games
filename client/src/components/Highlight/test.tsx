@@ -7,12 +7,13 @@ const props = {
   title: 'Heading 1',
   subtitle: 'Heading 2',
   buttonLabel: 'Buy now',
-  buttonLink: '/rdr2'
+  buttonLink: '/rdr2',
+  backgroundImage: '/img/red-dead-img.png'
 }
 
 describe('<Highlight />', () => {
   it('should render headings and button', () => {
-    const { container } = renderWithTheme(<Highlight {...props} />)
+    renderWithTheme(<Highlight {...props} />)
     expect(
       screen.getByRole('heading', { name: /Heading 1/i })
     ).toBeInTheDocument()
@@ -20,6 +21,12 @@ describe('<Highlight />', () => {
       screen.getByRole('heading', { name: /Heading 2/i })
     ).toBeInTheDocument()
     expect(screen.getByRole('link', { name: /buy now/i })).toBeInTheDocument()
-    expect(container.firstChild).toMatchSnapshot()
+  })
+
+  it('should render the background image', () => {
+    const { container } = renderWithTheme(<Highlight {...props} />)
+    expect(container.firstChild).toHaveStyle({
+      backgroundImage: `url(${props.backgroundImage})`
+    })
   })
 })
