@@ -98,7 +98,7 @@ const priceModifiers = {
   default: (theme: DefaultTheme) => css`
     color: ${theme.colors.white};
     padding: 0 ${theme.spacings.xxsmall};
-    background-color: ${theme.colors.secondary};
+    background: ${theme.colors.secondary};
     border-radius: ${theme.border.radius};
     margin-right: calc(${theme.spacings.xxsmall} / 2);
   `,

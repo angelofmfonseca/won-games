@@ -34,7 +34,7 @@ const GameCard = ({
         <FavoriteBorder aria-label="Add to Wishlist" />
       </S.FavButton>
       <S.BuyBox>
-        {!!promotionalPrice && <S.Price isPromotional>{price}</S.Price>}
+        {promotionalPrice && <S.Price isPromotional>{price}</S.Price>}
         <S.Price>{promotionalPrice || price}</S.Price>
         <Button icon={<AddShoppingCart />} size="small" />
       </S.BuyBox>
